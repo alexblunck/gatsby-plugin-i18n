@@ -1,5 +1,6 @@
 {
   "name": "@blunck/gatsby-plugin-i18n",
+  "repository": "git://github.com/alexblunck/gatsby-plugin-i18n.git",
   "main": "index.js",
   "version": "0.1.0",
   "keywords": [
