@@ -1,0 +1,17 @@
+{
+  "name": "@blunck/gatsby-plugin-i18n",
+  "main": "index.js",
+  "version": "0.0.0",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "i18n"
+  ],
+  "dependencies": {
+    "browser-lang": "^0.1.0",
+    "lodash.get": "^4.4.2"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.0.0"
+  }
+}
