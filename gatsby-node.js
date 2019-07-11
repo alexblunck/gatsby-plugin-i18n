@@ -1,9 +1,5 @@
 const { removeTrailingSlash } = require('./helpers')
 
-exports.createPagesStatefully = () => {
-    console.log('createPagesStatefully')
-}
-
 exports.onCreatePage = ({ page, actions }, pluginOptions) => {
     const { createPage, deletePage } = actions
 
