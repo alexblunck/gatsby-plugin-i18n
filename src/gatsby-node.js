@@ -48,6 +48,7 @@ exports.onCreatePage = ({ page, actions }, pluginOptions) => {
                     locales,
                     locale,
                     translations: require(`${translationsPath}/${locale}.json`),
+                    originalPagePath,
                     options: pluginOptions
                 }
             }
