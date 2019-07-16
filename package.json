@@ -2,7 +2,7 @@
   "name": "@blunck/gatsby-plugin-i18n",
   "repository": "git://github.com/alexblunck/gatsby-plugin-i18n.git",
   "main": "index.js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "keywords": [
     "gatsby",
     "gatsby-plugin",
