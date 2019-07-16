@@ -14,7 +14,7 @@ const wrapPageElement = ({ element, props }) => {
         let detected = window.localStorage.getItem('gatsby-plugin-i18n-locale')
 
         // Detect browser locale
-        if (!detected && i18n.redirectToBrowserLocale) {
+        if (!detected && i18n.options.redirectToBrowserLocale) {
             detected = browserLang({
                 languages: i18n.locales,
                 fallback: i18n.locale
