@@ -1,18 +1,29 @@
 {
   "name": "@blunck/gatsby-plugin-i18n",
   "repository": "git://github.com/alexblunck/gatsby-plugin-i18n.git",
-  "main": "index.js",
+  "main": "dist/index.js",
   "version": "0.1.0",
   "keywords": [
     "gatsby",
     "gatsby-plugin",
     "i18n"
   ],
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "prepare": "NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir dist"
+  },
   "dependencies": {
+    "@babel/runtime": "^7.5.4",
     "browser-lang": "^0.1.0",
     "lodash.get": "^4.4.2"
   },
   "peerDependencies": {
     "gatsby": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.4",
+    "babel-preset-gatsby-package": "^0.2.2"
   }
 }

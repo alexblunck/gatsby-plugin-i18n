@@ -11,12 +11,15 @@ const wrapPageElement = ({ element, props }) => {
     let isRedirect = false
 
     if (typeof window !== 'undefined') {
-        let detected =
-            window.localStorage.getItem('gatsby-plugin-i18n-locale') ||
-            browserLang({
+        let detected = window.localStorage.getItem('gatsby-plugin-i18n-locale')
+
+        // Detect browser locale
+        if (!detected && i18n.redirectToBrowserLocale) {
+            detected = browserLang({
                 languages: i18n.locales,
                 fallback: i18n.locale
             })
+        }
 
         // Make sure detected locale is supported
         if (!i18n.locales.includes(detected)) {

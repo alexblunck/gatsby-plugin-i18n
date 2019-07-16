@@ -7,7 +7,8 @@ exports.onCreatePage = ({ page, actions }, pluginOptions) => {
     const {
         locales = ['en'],
         defaultLocale = 'en',
-        translationsPath = '.'
+        translationsPath = '.',
+        redirectToBrowserLocale = true
     } = pluginOptions
 
     // Delete automatically created page
