@@ -1,7 +1,7 @@
 {
   "name": "@blunck/gatsby-plugin-i18n",
   "repository": "git://github.com/alexblunck/gatsby-plugin-i18n.git",
-  "main": "dist/index.js",
+  "main": "index.js",
   "version": "0.1.1",
   "keywords": [
     "gatsby",
@@ -9,9 +9,9 @@
     "i18n"
   ],
   "scripts": {
-    "build": "babel src --out-dir dist",
+    "build": "babel src --out-dir .",
     "prepare": "NODE_ENV=production npm run build",
-    "watch": "babel -w src --out-dir dist"
+    "watch": "babel -w src --out-dir ."
   },
   "dependencies": {
     "@babel/runtime": "^7.5.4",
